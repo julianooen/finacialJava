@@ -19,12 +19,6 @@ public class Controller {
     @Autowired
     private SimpleService simpleService;
 
-    @GetMapping("/texto")
-    public String texto(){
-        return"work";
-    }
-
-
     @GetMapping("/compost")
     public String compostCalc(@RequestParam(value = "capital", required = true) Double k,
                               @RequestParam(value = "time", required = true) Integer t,
